@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;1,100;1,200;1,500&display=swap");
+* {
+  margin: 0;
+  font-family: "Poppins";
+}
+.background-img {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  z-index: -999;
+  object-fit: cover;
+}
+#overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.267);
+  z-index: -1;
+}
+.weather-app {
+  height: 80vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.heading {
+  text-align: center;
+  padding-top: 30px;
+  color: white;
+}
+.search-bar {
+  padding: 10px 115px;
+  margin: 12px 0;
+  border-radius: 5px;
+  outline: none;
+}
+label {
+  text-align: center;
+
+  color: grey;
+}
+.weather-card {
+  /* border: 1px solid rgba(0, 0, 0, 0.384); */
+  border-radius: 10px;
+  width: 400px;
+  background: #2424248f;
+  color: #fff;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
+}
+.d-none {
+  display: none;
+}
+.change-location {
+  display: flex;
+  flex-direction: column;
+}
+.details > div,
+.details > h5 {
+  padding: 15px 0;
+  text-align: center;
+}
+.weather-card > img {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  overflow-y: hidden;
+}
+.city-name {
+  font-size: 30px;
+}
+.icon {
+  position: relative;
+  top: -60px;
+  border-radius: 50%;
+  left: 40%;
+  width: 70px;
+  height: 70px;
+  background: white;
+}
+.icon > img {
+  position: absolute;
+  left: -19px;
+  bottom: -20px;
+}
+.time {
+  width: 400px;
+}
